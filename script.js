@@ -837,8 +837,8 @@ function playGame(playerChoice) {
 
   if (playerChoice === computerChoice) {
     resultText = "IT'S A TIE";
-    // backgroundImage = "url('https://img.freepik.com/free-vector/green-hand-drawn-partnership-clipart_53876-115985.jpg?w=1800&t=st=1706109633~exp=1706110233~hmac=11b6134faf39ff0e54995b92ee9a74390e1c268a46c41016dd5353b47c977194')"
-    backgroundColor = "rgb(59, 99, 133)";
+    backgroundImage = "url('https://img.freepik.com/free-vector/illustation-handshake_53876-15714.jpg?w=1800&t=st=1706129405~exp=1706130005~hmac=6ccb6d9250de7318c4dbc827c720191fe44cb475de6c154f7f24bfd00e09a171')"
+    //backgroundColor = "rgb(59, 99, 133)";
     tieCount++;
 
     setTimeout(function () {
@@ -850,8 +850,8 @@ function playGame(playerChoice) {
         if (computerChoice === "scissors") {
           resultText = "YOU WIN!";
           isPlayerWinner = true;
-          backgroundColor = "rgb(38, 152, 76)";
-          //backgroundImage = "url('https://img.freepik.com/free-vector/circle-tick-check-mark-paint-brush-stroke_78370-645.jpg?w=1800&t=st=1706122774~exp=1706123374~hmac=9a16cf788d4d617901ee43a03f95421034b67caa4fbf23e202691f54df8d2c6a')"
+          //backgroundColor = "rgb(38, 152, 76)";
+          backgroundImage = "url('https://img.freepik.com/free-vector/falling-confetti-background_1048-6409.jpg?w=2000&t=st=1706129573~exp=1706130173~hmac=8f1450ca46fa61c8c2ae558b65c9cda7c3324a51b44efbf0ab4ad8946f5e3662')"
           winCount++;
           updateWinCount(winCount);
 
@@ -868,8 +868,8 @@ function playGame(playerChoice) {
         if (computerChoice === "rock") {
           resultText = "YOU WIN!";
           isPlayerWinner = true;
-          backgroundColor = "rgb(38, 152, 76)";
-          //backgroundImage = "url('https://img.freepik.com/free-vector/circle-tick-check-mark-paint-brush-stroke_78370-645.jpg?w=1800&t=st=1706122774~exp=1706123374~hmac=9a16cf788d4d617901ee43a03f95421034b67caa4fbf23e202691f54df8d2c6a')"
+          //backgroundColor = "rgb(38, 152, 76)";
+          backgroundImage = "url('https://img.freepik.com/free-vector/falling-confetti-background_1048-6409.jpg?w=2000&t=st=1706129573~exp=1706130173~hmac=8f1450ca46fa61c8c2ae558b65c9cda7c3324a51b44efbf0ab4ad8946f5e3662')"
           winCount++;
           updateWinCount(winCount);
 
@@ -886,8 +886,8 @@ function playGame(playerChoice) {
         if (computerChoice === "paper") {
           resultText = "YOU WIN!";
           isPlayerWinner = true;
-          backgroundColor = "rgb(38, 152, 76)";
-          // backgroundImage = "url('https://img.freepik.com/free-vector/circle-tick-check-mark-paint-brush-stroke_78370-645.jpg?w=1800&t=st=1706122774~exp=1706123374~hmac=9a16cf788d4d617901ee43a03f95421034b67caa4fbf23e202691f54df8d2c6a')"
+          //backgroundColor = "rgb(38, 152, 76)";
+          backgroundImage = "url('https://img.freepik.com/free-vector/falling-confetti-background_1048-6409.jpg?w=2000&t=st=1706129573~exp=1706130173~hmac=8f1450ca46fa61c8c2ae558b65c9cda7c3324a51b44efbf0ab4ad8946f5e3662')"
 
           winCount++;
           updateWinCount(winCount);
@@ -921,6 +921,8 @@ function playGame(playerChoice) {
   newDiv.style.backgroundColor = backgroundColor;
   newDiv.style.backgroundImage = backgroundImage;
   newDiv.style.backgroundSize = "cover";
+  newDiv.style.backgroundPositionY = "-55px";
+  
 
   // Kaybetme durumunda loseModal'ı göster ve mainContent'i bulanıklaştır
   if (!isPlayerWinner && resultText === "YOU LOSE!") {

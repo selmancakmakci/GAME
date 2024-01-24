@@ -22,6 +22,7 @@ body {
   max-width: 25em;
   height: 10em;
   margin: auto;
+  margin-top: 2em;
 
   border-radius: 35px;
   background-color: rgb(59, 99, 133);
@@ -48,7 +49,7 @@ body {
   max-width: 25em;
   height: 20em;
   margin: auto;
-  margin-top: -4em;
+  margin-top: -2em;
 
   border-radius: 35px;
 
@@ -80,7 +81,7 @@ body {
   /*margin-left: 70em;*/
   margin: auto;
   position: relative;
-  margin-top: -27em;
+  margin-top: -25em;
 
   z-index: 1000; /* Diğer içeriklerin üzerinde görünmesi için yüksek z-index */
   background-color: white;
@@ -135,7 +136,7 @@ li:hover {
   margin-left: -35px;
 }
 h2 {
-  font-size: 55px;
+  font-size: 50px;
   text-align: center;
   color: red;
   font-weight: bolder;

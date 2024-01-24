@@ -110,7 +110,7 @@ function playGame(playerChoice) {
                     
                 } else {
                     resultText = "YOU LOSE!";
-                    backgroundColor = "red";
+                    
                     loseCount++;
                     
                 }
@@ -129,7 +129,7 @@ function playGame(playerChoice) {
                     
                 } else {
                     resultText = "YOU LOSE!";
-                    backgroundColor = "red";
+                    
                     loseCount++;
                 }
                 break;
@@ -148,7 +148,7 @@ function playGame(playerChoice) {
                     
                 } else {
                     resultText = "YOU LOSE!";
-                    backgroundColor = "red";
+                    
                     loseCount++;
                 }
                 break;
@@ -273,13 +273,13 @@ function checkAnswer(isCorrect, listItem, modal) {
             document.getElementById("gameContainer").classList.remove("blur");
             document.getElementById("resultContainer").innerHTML = "";
             // Oyuna devam etmek için gerekli diğer işlemler burada yapılabilir
-        }, 1000); // 2 saniye sonra bu işlemleri yap
+        }, 600); // 2 saniye sonra bu işlemleri yap
     } else{
         listItem.style.backgroundColor = "red";
         setTimeout(function() {
             listItem.style.backgroundColor = ""; // Arka plan rengini sıfırla
             // Yanlış cevapla ilgili diğer işlemler burada yapılabilir
-        }, 1000); // 2 saniye sonra bu i
+        }, 600); // 2 saniye sonra bu i
         
     }
         

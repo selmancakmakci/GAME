@@ -44,6 +44,8 @@
     height: 20em;
     margin: auto;
     margin-top: -3em;
+    background-color: aquamarine;
+    border-radius: 25px;
     
    
     
@@ -57,18 +59,23 @@
 font-size:65px;
 padding-top: 20px;
 font-family: 'Permanent Marker', cursive;
+
 }
 
 #container {
     position: relative;
    border: none;
     height: 35em;
-    width: 28em;
+    
     padding-top: 2em;
     padding-bottom: 2em;
     margin: auto;
     box-shadow: 2px 2px 2px 2px rgb(123, 121, 121);
     border-radius: 35px;
+    background-color: aquamarine;
+    width: 100%;
+    max-width: 26em; /* Maksimum genişlik belirleyebilirsiniz */
+    margin: 0 auto;
 }
 
 
@@ -76,7 +83,7 @@ font-family: 'Permanent Marker', cursive;
   #loseModal {
     position:absolute;
     margin-top: -470px;
-    margin-left: 60px;
+    margin-left: 44px;
     width: 18em;
     height: 25em;
     border-radius: 25px;
@@ -88,6 +95,7 @@ font-family: 'Permanent Marker', cursive;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     display: none; /* Başlangıçta gizli */
     background-color: rgb(207, 234, 234);
+    
     
  
     
@@ -196,4 +204,14 @@ h3 {
 
 #tieCount {
     color: rgb(60, 59, 59)
+}
+
+#resultContainer{
+    background-color: aquamarine;
+}
+@media (max-width: 600px) {
+    #container {
+        padding: 10px;
+    }
+    /* Diğer mobil özgü özellikler */
 }

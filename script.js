@@ -66,46 +66,101 @@ const choices = ["rock", "paper", "scissors"];
 
 let playerScore = 0;
 let computerScore = 0;
+let winCount = 0;
+let loseCount = 0;
+let tieCount = 0;
+
+
 
 
 function playGame(playerChoice) {
     const computerChoice = choices[Math.floor(Math.random() * 3)];
     let resultText = "";
     let isPlayerWinner = false;
+    let backgroundColor = "";
+    let backgroundImage = "";
+    
+    
+   
+    
 
     if(playerChoice === computerChoice) {
         resultText = "IT'S A TIE";
+        backgroundImage = "url('https://img.freepik.com/free-vector/green-hand-drawn-partnership-clipart_53876-115985.jpg?w=1800&t=st=1706109633~exp=1706110233~hmac=11b6134faf39ff0e54995b92ee9a74390e1c268a46c41016dd5353b47c977194')"
+        /*backgroundColor = "blue";*/
+        tieCount++;
+        
+        setTimeout(function() {
+            newDiv.remove();
+        }, 1500);
+        
     } else {
         switch(playerChoice) {
             case "rock":
                 if(computerChoice === "scissors") {
                     resultText = "YOU WIN!";
                     isPlayerWinner = true;
+                   /* backgroundColor =  "green"*/
+                    backgroundImage = "url('https://img.freepik.com/free-psd/check-symbol-isolated_23-2150500363.jpg?w=1800&t=st=1706108056~exp=1706108656~hmac=7ea2ca25e65b12a82880445c71f1c34bb28f26453fb105b4195958188bff5ab5')"
+                    winCount++;
+                    
+                    setTimeout(function() {
+                        newDiv.remove();
+                    }, 1500);
+                    
                 } else {
                     resultText = "YOU LOSE!";
+                    backgroundColor = "red";
+                    loseCount++;
+                    
                 }
                 break;
             case "paper":
                 if(computerChoice === "rock") {
                     resultText = "YOU WIN!";
                     isPlayerWinner = true;
+                   /* backgroundColor = "green";*/
+                    backgroundImage = "url('https://img.freepik.com/free-psd/check-symbol-isolated_23-2150500363.jpg?w=1800&t=st=1706108056~exp=1706108656~hmac=7ea2ca25e65b12a82880445c71f1c34bb28f26453fb105b4195958188bff5ab5')"
+                    winCount++;
+                    
+                    setTimeout(function() {
+                        newDiv.remove();
+                    }, 1500);
+                    
                 } else {
                     resultText = "YOU LOSE!";
+                    backgroundColor = "red";
+                    loseCount++;
                 }
                 break;
             case "scissors":
                 if(computerChoice === "paper") {
                     resultText = "YOU WIN!";
                     isPlayerWinner = true;
+                   /* backgroundColor = "green";*/
+                    backgroundImage = "url('https://img.freepik.com/free-psd/check-symbol-isolated_23-2150500363.jpg?w=1800&t=st=1706108056~exp=1706108656~hmac=7ea2ca25e65b12a82880445c71f1c34bb28f26453fb105b4195958188bff5ab5')"
+                    
+                    winCount++;
+                    
+                    setTimeout(function() {
+                        newDiv.remove();
+                    }, 1500);
+                    
                 } else {
                     resultText = "YOU LOSE!";
+                    backgroundColor = "red";
+                    loseCount++;
                 }
                 break;
         }
     }
+    document.getElementById("winCount").textContent = "Wins: " + winCount;
+    document.getElementById("loseCount").textContent = "Loses: " + loseCount;
+    document.getElementById("tieCount").textContent = "Ties: " + tieCount;
 
     // Sonuçları göster
     document.getElementById("resultContainer").innerHTML = "";
+    
     var newDiv = document.createElement("div");
     newDiv.id = "newDiv";
 
@@ -113,6 +168,20 @@ function playGame(playerChoice) {
     newP.textContent = resultText;
     newDiv.appendChild(newP);
     document.getElementById("resultContainer").appendChild(newDiv);
+
+    if (resultText === "YOU WIN!") {
+        newP.style.color = "green";
+    } else if (resultText === "YOU LOSE!") {
+        newP.style.color = "red";
+    } else if (resultText === "IT'S A TIE") {
+        newP.style.color = "blue";
+    }
+  
+
+
+    newDiv.style.backgroundColor = backgroundColor;
+    newDiv.style.backgroundImage = backgroundImage;
+    newDiv.style.backgroundSize = "cover";
 
     // Kaybetme durumunda loseModal'ı göster ve mainContent'i bulanıklaştır
     if (!isPlayerWinner && resultText === "YOU LOSE!") {
@@ -132,9 +201,7 @@ function createLoseModal() {
         modal = document.createElement("div");
         modal.id = "loseModal";
         document.getElementById("container").appendChild(modal);
-        setTimeout(() => {
-            modal.style.opacity = 1; // Animasyonu başlat
-        }, 100); // 100 milisaniye sonra opacity'yi 1 yap
+        // 100 milisaniye sonra opacity'yi 1 yap
     
     } else {
         modal.innerHTML = "";
@@ -142,6 +209,14 @@ function createLoseModal() {
 
     const randomQuestionIndex = Math.floor(Math.random() * questionsData.length);
     const questionData = questionsData[randomQuestionIndex];
+
+    const warningArea = document.createElement("h2")
+    warningArea.textContent = `YOU LOSE!`
+    modal.appendChild(warningArea)
+
+    const warningText = document.createElement("h3")
+    warningText.textContent = `"Please! Select the corrent answer to continue"`
+    modal.appendChild(warningText)
 
     // Soruyu ekle
     const questionParagraph = document.createElement("p");
@@ -196,6 +271,7 @@ function checkAnswer(isCorrect, listItem, modal) {
             modal.style.display = "none";
             document.getElementById("resultContainer").classList.remove("blur");
             document.getElementById("gameContainer").classList.remove("blur");
+            document.getElementById("resultContainer").innerHTML = "";
             // Oyuna devam etmek için gerekli diğer işlemler burada yapılabilir
         }, 1000); // 2 saniye sonra bu işlemleri yap
     } else{

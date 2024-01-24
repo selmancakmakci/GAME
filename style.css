@@ -81,7 +81,7 @@ body {
   /*margin-left: 70em;*/
   margin: auto;
   position: relative;
-  margin-top: -25em;
+  margin-top: -26em;
 
   z-index: 1000; /* Diğer içeriklerin üzerinde görünmesi için yüksek z-index */
   background-color: white;

@@ -41,6 +41,7 @@ const questionsData = [
       },
       {
         question: "Essere (Presente, VOI)",
+        
         answers: [
           { text: "SIETE", isCorrect: true },
           { text: "SIAMO", isCorrect: false },
@@ -172,7 +173,7 @@ function playGame(playerChoice) {
     if (resultText === "YOU WIN!") {
         newP.style.color = "green";
     } else if (resultText === "YOU LOSE!") {
-        newP.style.color = "red";
+        newP.style.color = "none";
     } else if (resultText === "IT'S A TIE") {
         newP.style.color = "blue";
     }
@@ -220,7 +221,11 @@ function createLoseModal() {
 
     // Soruyu ekle
     const questionParagraph = document.createElement("p");
+   
+    
     questionParagraph.textContent = questionData.question;
+    ;
+
     modal.appendChild(questionParagraph);
 
     // Cevapları ekle

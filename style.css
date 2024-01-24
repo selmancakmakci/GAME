@@ -45,9 +45,9 @@ body{
 
     text-align: center;
    /* box-shadow: 2px 2px rgb(4, 65, 118);*/
-    width: 90%;
+    width: 100%;
     min-height: 20em;
-    max-width: 23em;
+   /* max-width: 23em;*/
     height: 20em;
     margin: auto;
     margin-top: -3em;
@@ -63,7 +63,7 @@ body{
 }
 
 #newDiv p {
-font-size:65px;
+font-size:55px;
 padding-top: 20px;
 font-family: 'Permanent Marker', cursive;
 
@@ -93,7 +93,7 @@ font-family: 'Permanent Marker', cursive;
     margin-top: -470px;
     width: 100%;
     width: 17em;
-    height: 25em;
+    /*height: 25em;*/
     border-radius: 25px;
     margin-left: 10px;
     

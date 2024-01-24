@@ -366,7 +366,7 @@ const questionsData = [
     question: "DIRE (Presente, NOI)",
     answers: [
       { text: "DIAMO", isCorrect: false },
-      { text: "DIAMO", isCorrect: true },
+      { text: "DICIAMO", isCorrect: true },
       { text: "DICONO", isCorrect: false },
     ],
   },
@@ -432,6 +432,390 @@ const questionsData = [
       { text: "ESCONO", isCorrect: true },
       { text: "ESCE", isCorrect: false },
       { text: "ESCI", isCorrect: false },
+    ],
+  },
+  {
+    question: "SALIRE (Presente, IO)",
+    answers: [
+      { text: "SALGO", isCorrect: true },
+      { text: "SALI", isCorrect: false },
+      { text: "SALGONO", isCorrect: false },
+    ],
+  },
+  {
+    question: "SALIRE (Presente, TU)",
+    answers: [
+      { text: "SALGO", isCorrect: false },
+      { text: "SALI", isCorrect: true },
+      { text: "SALE", isCorrect: false },
+    ],
+  },
+  {
+    question: "SALIRE (Presente, LUI/LEI)",
+    answers: [
+      { text: "SALI", isCorrect: false },
+      { text: "SALGO", isCorrect: false },
+      { text: "SALE", isCorrect: true },
+    ],
+  },
+  {
+    question: "SALIRE (Presente, NOI)",
+    answers: [
+      { text: "SALIAMO", isCorrect: true },
+      { text: "SALITE", isCorrect: false },
+      { text: "SALGONO", isCorrect: false },
+    ],
+  },
+  {
+    question: "SALIRE (Presente, VOI)",
+    answers: [
+      { text: "SALIAMO", isCorrect: false },
+      { text: "SALITE", isCorrect: true },
+      { text: "SALGONO", isCorrect: false },
+    ],
+  },
+  {
+    question: "SALIRE (Presente, LORO)",
+    answers: [
+      { text: "SALGONO", isCorrect: true },
+      { text: "SALE", isCorrect: false },
+      { text: "SALI", isCorrect: false },
+    ],
+  },
+  {
+    question: "RIMANERE (Presente, IO)",
+    answers: [
+      { text: "RIMANGO", isCorrect: true },
+      { text: "RIMANI", isCorrect: false },
+      { text: "RIMANGONO", isCorrect: false },
+    ],
+  },
+  {
+    question: "RIMANERE (Presente, TU)",
+    answers: [
+      { text: "RIMANGO", isCorrect: false },
+      { text: "RIMANI", isCorrect: true },
+      { text: "RIMANE", isCorrect: false },
+    ],
+  },
+  {
+    question: "RIMANERE (Presente, LUI/LEI)",
+    answers: [
+      { text: "RIMANI", isCorrect: false },
+      { text: "RIMANGO", isCorrect: false },
+      { text: "RIMANE", isCorrect: true },
+    ],
+  },
+  {
+    question: "RIMANERE (Presente, NOI)",
+    answers: [
+      { text: "RIMANIAMO", isCorrect: true },
+      { text: "RIMANETE", isCorrect: false },
+      { text: "RIMANGONO", isCorrect: false },
+    ],
+  },
+  {
+    question: "RIMANERE (Presente, VOI)",
+    answers: [
+      { text: "RIMANIAMO", isCorrect: false },
+      { text: "RIMANETE", isCorrect: true },
+      { text: "RIMANGONO", isCorrect: false },
+    ],
+  },
+  {
+    question: "RIMANERE (Presente, LORO)",
+    answers: [
+      { text: "RIMANGONO", isCorrect: true },
+      { text: "RIMANE", isCorrect: false },
+      { text: "RIMANI", isCorrect: false },
+    ],
+  },
+  {
+    question: "SAPERE (Presente, IO)",
+    answers: [
+      { text: "SO", isCorrect: true },
+      { text: "SAI", isCorrect: false },
+      { text: "SANNO", isCorrect: false },
+    ],
+  },
+  {
+    question: "SAPERE (Presente, TU)",
+    answers: [
+      { text: "SO", isCorrect: false },
+      { text: "SAI", isCorrect: true },
+      { text: "SA", isCorrect: false },
+    ],
+  },
+  {
+    question: "SAPERE (Presente, LUI/LEI)",
+    answers: [
+      { text: "SAI", isCorrect: false },
+      { text: "SO", isCorrect: false },
+      { text: "SA", isCorrect: true },
+    ],
+  },
+  {
+    question: "SAPERE (Presente, NOI)",
+    answers: [
+      { text: "SAPPIAMO", isCorrect: true },
+      { text: "SAPETE", isCorrect: false },
+      { text: "SANNO", isCorrect: false },
+    ],
+  },
+  {
+    question: "SAPERE (Presente, VOI)",
+    answers: [
+      { text: "SAPPIAMO", isCorrect: false },
+      { text: "SAPETE", isCorrect: true },
+      { text: "SANNO", isCorrect: false },
+    ],
+  },
+  {
+    question: "SAPERE (Presente, LORO)",
+    answers: [
+      { text: "SANNO", isCorrect: true },
+      { text: "SA", isCorrect: false },
+      { text: "SAI", isCorrect: false },
+    ],
+  },
+  {
+    question: "VEDERE (Presente, IO)",
+    answers: [
+      { text: "VEDO", isCorrect: true },
+      { text: "VEDI", isCorrect: false },
+      { text: "VEDONO", isCorrect: false },
+    ],
+  },
+  {
+    question: "VEDERE (Presente, TU)",
+    answers: [
+      { text: "VEDO", isCorrect: false },
+      { text: "VEDI", isCorrect: true },
+      { text: "VEDE", isCorrect: false },
+    ],
+  },
+  {
+    question: "VEDERE (Presente, LUI/LEI)",
+    answers: [
+      { text: "VEDI", isCorrect: false },
+      { text: "VEDO", isCorrect: false },
+      { text: "VEDE", isCorrect: true },
+    ],
+  },
+  {
+    question: "VEDERE (Presente, NOI)",
+    answers: [
+      { text: "VEDIAMO", isCorrect: true },
+      { text: "VEDETE", isCorrect: false },
+      { text: "VEDONO", isCorrect: false },
+    ],
+  },
+  {
+    question: "VEDERE (Presente, VOI)",
+    answers: [
+      { text: "VEDIAMO", isCorrect: false },
+      { text: "VEDETE", isCorrect: true },
+      { text: "VEDONO", isCorrect: false },
+    ],
+  },
+  {
+    question: "VEDERE (Presente, LORO)",
+    answers: [
+      { text: "VEDONO", isCorrect: true },
+      { text: "VEDE", isCorrect: false },
+      { text: "VEDI", isCorrect: false },
+    ],
+  },
+  {
+    question: "BERE (Presente, IO)",
+    answers: [
+      { text: "BEVO", isCorrect: true },
+      { text: "BEVI", isCorrect: false },
+      { text: "BEVONO", isCorrect: false },
+    ],
+  },
+  {
+    question: "BERE (Presente, TU)",
+    answers: [
+      { text: "BEVO", isCorrect: false },
+      { text: "BEVI", isCorrect: true },
+      { text: "BEVE", isCorrect: false },
+    ],
+  },
+  {
+    question: "BERE (Presente, LUI/LEI)",
+    answers: [
+      { text: "BEVI", isCorrect: false },
+      { text: "BEVO", isCorrect: false },
+      { text: "BEVE", isCorrect: true },
+    ],
+  },
+  {
+    question: "BERE (Presente, NOI)",
+    answers: [
+      { text: "BEVIAMO", isCorrect: true },
+      { text: "BEVETE", isCorrect: false },
+      { text: "BEVONO", isCorrect: false },
+    ],
+  },
+  {
+    question: "BERE (Presente, VOI)",
+    answers: [
+      { text: "BEVIAMO", isCorrect: false },
+      { text: "BEVETE", isCorrect: true },
+      { text: "BEVONO", isCorrect: false },
+    ],
+  },
+  {
+    question: "BERE (Presente, LORO)",
+    answers: [
+      { text: "BEVONO", isCorrect: true },
+      { text: "BEVE", isCorrect: false },
+      { text: "BEVI", isCorrect: false },
+    ],
+  },
+  {
+    question: "DOVERE (Presente, IO)",
+    answers: [
+      { text: "DEVO", isCorrect: true },
+      { text: "DEVI", isCorrect: false },
+      { text: "DEVONO", isCorrect: false },
+    ],
+  },
+  {
+    question: "DOVERE (Presente, TU)",
+    answers: [
+      { text: "DEVO", isCorrect: false },
+      { text: "DEVI", isCorrect: true },
+      { text: "DEVE", isCorrect: false },
+    ],
+  },
+  {
+    question: "DOVERE (Presente, LUI/LEI)",
+    answers: [
+      { text: "DEVI", isCorrect: false },
+      { text: "DEVO", isCorrect: false },
+      { text: "DEVE", isCorrect: true },
+    ],
+  },
+  {
+    question: "DOVERE (Presente, NOI)",
+    answers: [
+      { text: "DOBBIAMO", isCorrect: true },
+      { text: "DOVETE", isCorrect: false },
+      { text: "DEVONO", isCorrect: false },
+    ],
+  },
+  {
+    question: "DOVERE (Presente, VOI)",
+    answers: [
+      { text: "DOBBIAMO", isCorrect: false },
+      { text: "DOVETE", isCorrect: true },
+      { text: "DEVONO", isCorrect: false },
+    ],
+  },
+  {
+    question: "DOVERE (Presente, LORO)",
+    answers: [
+      { text: "DEVONO", isCorrect: true },
+      { text: "DEVE", isCorrect: false },
+      { text: "DEVI", isCorrect: false },
+    ],
+  },
+  {
+    question: "POTERE (Presente, IO)",
+    answers: [
+      { text: "POSSO", isCorrect: true },
+      { text: "PUOI", isCorrect: false },
+      { text: "POSSONO", isCorrect: false },
+    ],
+  },
+  {
+    question: "POTERE (Presente, TU)",
+    answers: [
+      { text: "POSSO", isCorrect: false },
+      { text: "PUOI", isCorrect: true },
+      { text: "PUÒ", isCorrect: false },
+    ],
+  },
+  {
+    question: "POTERE (Presente, LUI/LEI)",
+    answers: [
+      { text: "PUOI", isCorrect: false },
+      { text: "POSSO", isCorrect: false },
+      { text: "PUÒ", isCorrect: true },
+    ],
+  },
+  {
+    question: "POTERE (Presente, NOI)",
+    answers: [
+      { text: "POSSIAMO", isCorrect: true },
+      { text: "POTETE", isCorrect: false },
+      { text: "POSSONO", isCorrect: false },
+    ],
+  },
+  {
+    question: "POTERE (Presente, VOI)",
+    answers: [
+      { text: "POSSIAMO", isCorrect: false },
+      { text: "POTETE", isCorrect: true },
+      { text: "POSSONO", isCorrect: false },
+    ],
+  },
+  {
+    question: "POTERE (Presente, LORO)",
+    answers: [
+      { text: "POSSONO", isCorrect: true },
+      { text: "PUÒ", isCorrect: false },
+      { text: "PUOI", isCorrect: false },
+    ],
+  },
+  {
+    question: "VOLERE (Presente, IO)",
+    answers: [
+      { text: "VOGLIO", isCorrect: true },
+      { text: "VUOI", isCorrect: false },
+      { text: "VOGLIONO", isCorrect: false },
+    ],
+  },
+  {
+    question: "VOLERE (Presente, TU)",
+    answers: [
+      { text: "VOGLIO", isCorrect: false },
+      { text: "VUOI", isCorrect: true },
+      { text: "VUOLE", isCorrect: false },
+    ],
+  },
+  {
+    question: "VOLERE (Presente, LUI/LEI)",
+    answers: [
+      { text: "VUOI", isCorrect: false },
+      { text: "VOGLIO", isCorrect: false },
+      { text: "VUOLE", isCorrect: true },
+    ],
+  },
+  {
+    question: "VOLERE (Presente, NOI)",
+    answers: [
+      { text: "VOGLIAMO", isCorrect: true },
+      { text: "VOLETE", isCorrect: false },
+      { text: "VOGLIONO", isCorrect: false },
+    ],
+  },
+  {
+    question: "VOLERE (Presente, VOI)",
+    answers: [
+      { text: "VOGLIAMO", isCorrect: false },
+      { text: "VOLETE", isCorrect: true },
+      { text: "VOGLIONO", isCorrect: false },
+    ],
+  },
+  {
+    question: "VOLERE (Presente, LORO)",
+    answers: [
+      { text: "VOGLIONO", isCorrect: true },
+      { text: "VUOLE", isCorrect: false },
+      { text: "VUOI", isCorrect: false },
     ],
   },
 ];

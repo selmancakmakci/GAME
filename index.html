@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Game</title>
-</head>
-<body> <div id="container">
-    <div id="counterContainer">
+  </head>
+  <body>
+    <div id="container">
+      <div id="counterContainer">
         <p id="winCount">Wins: 0</p>
         <p id="loseCount">Loses: 0</p>
         <p id="tieCount">Ties: 0</p>
+        <p id="celebrationMessage" style="display: none"></p>
+      </div>
+
+      <div id="gameContainer">
+        <button class="buttonClass" id="rockButton" data-choice="rock">
+          🪨
+        </button>
+        <button class="buttonClass" id="paperButton" data-choice="paper">
+          📃
+        </button>
+        <button class="buttonClass" id="scissorsButton" data-choice="scissors">
+          ✂️
+        </button>
+      </div>
+      <div id="resultContainer"></div>
     </div>
-    
-    <div id="gameContainer">
 
-
-       <button class="buttonClass"  id="rockButton" data-choice="rock" > 🪨 </button>
-       <button class="buttonClass" id="paperButton" data-choice="paper" > 📃 </button>
-       <button class="buttonClass" id="scissorsButton" data-choice="scissors" > ✂️ </button>
-
-       
-    </div>
-    <div id="resultContainer"></div>
-
-</div>
     <script src="./script.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  </body>
 </html>

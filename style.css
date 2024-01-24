@@ -3,14 +3,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Righteous&display=swap');
 
+body{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 #gameContainer {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     box-shadow: 2px 2px rgb(4, 65, 118);
-    width: 90%;
-    max-width: 23em;
+    width: 100%;
+    max-width: 30em;
     height: 10em;
     margin: auto;
     
@@ -44,7 +51,7 @@
     height: 20em;
     margin: auto;
     margin-top: -3em;
-    background-color: aquamarine;
+    
     border-radius: 25px;
     
    
@@ -61,11 +68,11 @@ padding-top: 20px;
 font-family: 'Permanent Marker', cursive;
 
 }
-
+/*
 #container {
     position: relative;
    border: none;
-    height: 35em;
+    height: 38em;
     
     padding-top: 2em;
     padding-bottom: 2em;
@@ -75,15 +82,16 @@ font-family: 'Permanent Marker', cursive;
     background-color: aquamarine;
     width: 100%;
     max-width: 26em; /* Maksimum genişlik belirleyebilirsiniz */
-    margin: 0 auto;
+   /* margin: 0 auto;
+    border: none;
 }
-
+*/
 
  
   #loseModal {
     position:absolute;
     margin-top: -470px;
-    margin-left: 44px;
+    
     width: 18em;
     height: 25em;
     border-radius: 25px;
@@ -175,7 +183,8 @@ h3 {
      justify-content:space-evenly;
      
      border-radius: 25px;
-     width: 75%;
+     width: 90%;
+     max-width: 35em;
      margin: auto;
      margin-bottom: 10px;
      font-weight: bolder;
@@ -187,7 +196,7 @@ h3 {
 }
 
 #counterContainer p {
-    font-size: 25px;
+    font-size: 15px;
     margin: 5px;
     font-family: 'Righteous', sans-serif;
    
@@ -207,7 +216,7 @@ h3 {
 }
 
 #resultContainer{
-    background-color: aquamarine;
+    
 }
 @media (max-width: 600px) {
     #container {

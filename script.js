@@ -86,7 +86,7 @@ function playGame(playerChoice) {
 
     if(playerChoice === computerChoice) {
         resultText = "IT'S A TIE";
-        backgroundImage = "url('https://img.freepik.com/free-vector/green-hand-drawn-partnership-clipart_53876-115985.jpg?w=1800&t=st=1706109633~exp=1706110233~hmac=11b6134faf39ff0e54995b92ee9a74390e1c268a46c41016dd5353b47c977194')"
+        /*backgroundImage = "url('https://img.freepik.com/free-vector/green-hand-drawn-partnership-clipart_53876-115985.jpg?w=1800&t=st=1706109633~exp=1706110233~hmac=11b6134faf39ff0e54995b92ee9a74390e1c268a46c41016dd5353b47c977194')"*/
         /*backgroundColor = "blue";*/
         tieCount++;
         
@@ -101,7 +101,7 @@ function playGame(playerChoice) {
                     resultText = "YOU WIN!";
                     isPlayerWinner = true;
                    /* backgroundColor =  "green"*/
-                    backgroundImage = "url('https://img.freepik.com/free-psd/check-symbol-isolated_23-2150500363.jpg?w=1800&t=st=1706108056~exp=1706108656~hmac=7ea2ca25e65b12a82880445c71f1c34bb28f26453fb105b4195958188bff5ab5')"
+                   /* backgroundImage = "url('https://img.freepik.com/free-psd/check-symbol-isolated_23-2150500363.jpg?w=1800&t=st=1706108056~exp=1706108656~hmac=7ea2ca25e65b12a82880445c71f1c34bb28f26453fb105b4195958188bff5ab5')"*/
                     winCount++;
                     
                     setTimeout(function() {
@@ -120,7 +120,7 @@ function playGame(playerChoice) {
                     resultText = "YOU WIN!";
                     isPlayerWinner = true;
                    /* backgroundColor = "green";*/
-                    backgroundImage = "url('https://img.freepik.com/free-psd/check-symbol-isolated_23-2150500363.jpg?w=1800&t=st=1706108056~exp=1706108656~hmac=7ea2ca25e65b12a82880445c71f1c34bb28f26453fb105b4195958188bff5ab5')"
+                   /* backgroundImage = "url('https://img.freepik.com/free-psd/check-symbol-isolated_23-2150500363.jpg?w=1800&t=st=1706108056~exp=1706108656~hmac=7ea2ca25e65b12a82880445c71f1c34bb28f26453fb105b4195958188bff5ab5')"*/
                     winCount++;
                     
                     setTimeout(function() {
@@ -138,7 +138,7 @@ function playGame(playerChoice) {
                     resultText = "YOU WIN!";
                     isPlayerWinner = true;
                    /* backgroundColor = "green";*/
-                    backgroundImage = "url('https://img.freepik.com/free-psd/check-symbol-isolated_23-2150500363.jpg?w=1800&t=st=1706108056~exp=1706108656~hmac=7ea2ca25e65b12a82880445c71f1c34bb28f26453fb105b4195958188bff5ab5')"
+                    /*backgroundImage = "url('https://img.freepik.com/free-psd/check-symbol-isolated_23-2150500363.jpg?w=1800&t=st=1706108056~exp=1706108656~hmac=7ea2ca25e65b12a82880445c71f1c34bb28f26453fb105b4195958188bff5ab5')"*/
                     
                     winCount++;
                     

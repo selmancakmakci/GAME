@@ -17,7 +17,7 @@ body{
     justify-content: center;
     box-shadow: 2px 2px rgb(4, 65, 118);
     width: 100%;
-    max-width: 30em;
+   /* max-width: 30em;*/
     height: 10em;
     margin: auto;
     
@@ -52,7 +52,7 @@ body{
     margin: auto;
     margin-top: -3em;
     
-    border-radius: 25px;
+    
     
    
     
@@ -91,10 +91,11 @@ font-family: 'Permanent Marker', cursive;
   #loseModal {
     position:absolute;
     margin-top: -470px;
-    
-    width: 18em;
+    width: 100%;
+    width: 17em;
     height: 25em;
     border-radius: 25px;
+    margin-left: 10px;
     
 
     z-index: 10; /* Diğer içeriklerin üzerinde görünmesi için yüksek z-index */
@@ -183,8 +184,8 @@ h3 {
      justify-content:space-evenly;
      
      border-radius: 25px;
-     width: 90%;
-     max-width: 35em;
+     width: 100%;
+     /*max-width: 35em;*/
      margin: auto;
      margin-bottom: 10px;
      font-weight: bolder;
@@ -215,12 +216,3 @@ h3 {
     color: rgb(60, 59, 59)
 }
 
-#resultContainer{
-    
-}
-@media (max-width: 600px) {
-    #container {
-        padding: 10px;
-    }
-    /* Diğer mobil özgü özellikler */
-}

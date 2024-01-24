@@ -173,7 +173,7 @@ function playGame(playerChoice) {
     if (resultText === "YOU WIN!") {
         newP.style.color = "green";
     } else if (resultText === "YOU LOSE!") {
-        newP.style.color = "none";
+        newP.style.color = "";
     } else if (resultText === "IT'S A TIE") {
         newP.style.color = "blue";
     }

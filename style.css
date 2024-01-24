@@ -8,7 +8,9 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    
 }
 #gameContainer {
     display: flex;
@@ -16,8 +18,8 @@ body{
     align-items: center;
     justify-content: center;
     box-shadow: 2px 2px rgb(4, 65, 118);
-    width: 120%;
-   /* max-width: 30em;*/
+    width: 100%;
+   max-width: 30em;
     height: 10em;
     margin: auto;
     
@@ -68,33 +70,34 @@ padding-top: 20px;
 font-family: 'Permanent Marker', cursive;
 
 }
-/*
+
 #container {
-    position: relative;
-   border: none;
-    height: 38em;
+    
+    
     
     padding-top: 2em;
     padding-bottom: 2em;
     margin: auto;
-    box-shadow: 2px 2px 2px 2px rgb(123, 121, 121);
-    border-radius: 35px;
-    background-color: aquamarine;
+    
+   
+    
     width: 100%;
-    max-width: 26em; /* Maksimum genişlik belirleyebilirsiniz */
-   /* margin: 0 auto;
-    border: none;
+    
+    
+      
 }
-*/
+
 
  
   #loseModal {
     position:absolute;
     margin-top: -470px;
     width: 100%;
-    width: 18em;
+    max-width: 18em;
     /*height: 25em;*/
     border-radius: 25px;
+    margin-left: 70em;
+   
     
    
     
@@ -185,8 +188,8 @@ h3 {
      justify-content:space-evenly;
      
      border-radius: 25px;
-     width: 120%;
-     /*max-width: 35em;*/
+     width: 100%;
+     max-width: 30em;
      margin: auto;
      margin-bottom: 10px;
      font-weight: bolder;

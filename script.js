@@ -242,6 +242,198 @@ const questionsData = [
       { text: "FAI", isCorrect: false },
     ],
   },
+  {
+    question: "DARE (Presente, IO)",
+    answers: [
+      { text: "DO", isCorrect: true },
+      { text: "DAI", isCorrect: false },
+      { text: "DANNO", isCorrect: false },
+    ],
+  },
+  {
+    question: "DARE (Presente, TU)",
+    answers: [
+      { text: "DO", isCorrect: false },
+      { text: "DAI", isCorrect: true },
+      { text: "DA", isCorrect: false },
+    ],
+  },
+  {
+    question: "DARE (Presente, LUI)",
+    answers: [
+      { text: "DAI", isCorrect: false },
+      { text: "DO", isCorrect: false },
+      { text: "DA", isCorrect: true },
+    ],
+  },
+  {
+    question: "DARE (Presente, NOI)",
+    answers: [
+      { text: "DIAMO", isCorrect: true },
+      { text: "DATE", isCorrect: false },
+      { text: "DANNO", isCorrect: false },
+    ],
+  },
+  {
+    question: "DARE (Presente, VOI)",
+    answers: [
+      { text: "DIAMO", isCorrect: false },
+      { text: "DATE", isCorrect: true },
+      { text: "DANNO", isCorrect: false },
+    ],
+  },
+  {
+    question: "DARE (Presente, LORO)",
+    answers: [
+      { text: "DANNO", isCorrect: true },
+      { text: "DA", isCorrect: false },
+      { text: "DAI", isCorrect: false },
+    ],
+  },
+  {
+    question: "STARE (Presente, IO)",
+    answers: [
+      { text: "STO", isCorrect: true },
+      { text: "STAI", isCorrect: false },
+      { text: "STANNO", isCorrect: false },
+    ],
+  },
+  {
+    question: "STARE (Presente, TU)",
+    answers: [
+      { text: "STO", isCorrect: false },
+      { text: "STAI", isCorrect: true },
+      { text: "STA", isCorrect: false },
+    ],
+  },
+  {
+    question: "STARE (Presente, LUI/LEI)",
+    answers: [
+      { text: "STAI", isCorrect: false },
+      { text: "STO", isCorrect: false },
+      { text: "STA", isCorrect: true },
+    ],
+  },
+  {
+    question: "STARE (Presente, NOI)",
+    answers: [
+      { text: "STIAMO", isCorrect: true },
+      { text: "STATE", isCorrect: false },
+      { text: "STANNO", isCorrect: false },
+    ],
+  },
+  {
+    question: "STARE (Presente, VOI)",
+    answers: [
+      { text: "STIAMO", isCorrect: false },
+      { text: "STATE", isCorrect: true },
+      { text: "STANNO", isCorrect: false },
+    ],
+  },
+  {
+    question: "STARE (Presente, LORO)",
+    answers: [
+      { text: "STANNO", isCorrect: true },
+      { text: "STA", isCorrect: false },
+      { text: "STAI", isCorrect: false },
+    ],
+  },
+  {
+    question: "DIRE (Presente, IO)",
+    answers: [
+      { text: "DICO", isCorrect: true },
+      { text: "DICI", isCorrect: false },
+      { text: "DICONO", isCorrect: false },
+    ],
+  },
+  {
+    question: "DIRE (Presente, TU)",
+    answers: [
+      { text: "DICO", isCorrect: false },
+      { text: "DICI", isCorrect: true },
+      { text: "DICE", isCorrect: false },
+    ],
+  },
+  {
+    question: "DIRE (Presente, LUI/LEI)",
+    answers: [
+      { text: "DICI", isCorrect: false },
+      { text: "DICO", isCorrect: false },
+      { text: "DICE", isCorrect: true },
+    ],
+  },
+  {
+    question: "DIRE (Presente, NOI)",
+    answers: [
+      { text: "DIAMO", isCorrect: false },
+      { text: "DIAMO", isCorrect: true },
+      { text: "DICONO", isCorrect: false },
+    ],
+  },
+  {
+    question: "DIRE (Presente, VOI)",
+    answers: [
+      { text: "DIAMO", isCorrect: false },
+      { text: "DITE", isCorrect: true },
+      { text: "DICONO", isCorrect: false },
+    ],
+  },
+  {
+    question: "DIRE (Presente, LORO)",
+    answers: [
+      { text: "DICONO", isCorrect: true },
+      { text: "DICE", isCorrect: false },
+      { text: "DICI", isCorrect: false },
+    ],
+  },
+  {
+    question: "USCIRE (Presente, IO)",
+    answers: [
+      { text: "ESCO", isCorrect: true },
+      { text: "ESCI", isCorrect: false },
+      { text: "ESCONO", isCorrect: false },
+    ],
+  },
+  {
+    question: "USCIRE (Presente, TU)",
+    answers: [
+      { text: "ESCO", isCorrect: false },
+      { text: "ESCI", isCorrect: true },
+      { text: "ESCE", isCorrect: false },
+    ],
+  },
+  {
+    question: "USCIRE (Presente, LUI/LEI)",
+    answers: [
+      { text: "ESCI", isCorrect: false },
+      { text: "ESCO", isCorrect: false },
+      { text: "ESCE", isCorrect: true },
+    ],
+  },
+  {
+    question: "USCIRE (Presente, NOI)",
+    answers: [
+      { text: "USCIAMO", isCorrect: true },
+      { text: "USCITE", isCorrect: false },
+      { text: "ESCONO", isCorrect: false },
+    ],
+  },
+  {
+    question: "USCIRE (Presente, VOI)",
+    answers: [
+      { text: "USCIAMO", isCorrect: false },
+      { text: "USCITE", isCorrect: true },
+      { text: "ESCONO", isCorrect: false },
+    ],
+  },
+  {
+    question: "USCIRE (Presente, LORO)",
+    answers: [
+      { text: "ESCONO", isCorrect: true },
+      { text: "ESCE", isCorrect: false },
+      { text: "ESCI", isCorrect: false },
+    ],
+  },
 ];
 
 const choices = ["rock", "paper", "scissors"];
